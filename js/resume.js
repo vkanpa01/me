@@ -22,7 +22,7 @@
 
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
-    target: '#sideNav'
+    target: '#topNav'
   });
 
 })(jQuery); // End of use strict
@@ -45,16 +45,4 @@ $(window).on("load",function() {
 
     });
   }).scroll(); //invoke scroll-handler on page-load
-});
-
-
-$(window).scroll(function() {
-  var scrollTop = $(this).scrollTop();
-  $('.header-overlay').css({
-    opacity: function() {
-      var elementHeight = $(this).height();
-      return (4*elementHeight - 0.5*scrollTop) / elementHeight*0.3;
-    }
-  });
-
 });

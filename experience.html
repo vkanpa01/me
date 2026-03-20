@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Experience — Vivek Kanpa">
+    <title>Experience — Vivek Kanpa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
+  </head>
+
+  <body class="inner-page">
+
+    <header class="site-header">
+      <a href="index.html" class="site-name">Vivek Kanpa</a>
+      <nav class="site-nav">
+        <a href="experience.html" class="active">Comp Med Research</a>
+        <a href="research.html">Projects Beyond Terminal</a>
+        <a href="publications.html">Publications</a>
+        <a href="education.html">Education</a>
+        <a href="fun.html">Fun</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="inner-content">
+      <h1 class="section-title">Experience</h1>
+
+      <!-- EHHOP -->
+      <div class="entry">
+        <div class="entry-body">
+          <div class="entry-org">East Harlem Health Outreach Program</div>
+          <div class="entry-role">Chief Research Chair</div>
+          <p><em>Goal: Lead research and quality improvement (QI) projects to improve patient care and outcomes at a student-run free clinic.</em></p>
+          <ul>
+            <li>Managing 15+ research/QI projects across 6 clinical areas with 25 volunteers. Projects include measuring 
+              the effectiveness of tele-psychiatry v.s in-person psychiatric care, optimizing the liver clinic's 
+              diagnostic work-up for MASLD, a clinical trial of food vouchers for diabetic patients, and understanding
+              appointment attendance and medication adherence.</li>
+            <li>Building a HIPAA-compliant retrospective patient database, EHHOP CHARTS, to power large, longitudinal, retrospective studies.</li>
+          </ul>
+        </div>
+        <div class="entry-date">Oct 2024 — present</div>
+      </div>
+
+      <!-- Mount Sinai -->
+      <div class="entry">
+        <div class="entry-body">
+          <div class="entry-org">Precision -Omics Lab, Icahn School of Medicine at Mount Sinai</div>
+          <div class="entry-role">Doctoral Research Student</div>
+          <p><em>Goal: Build and evaluate genomic, proteomic, and EHR AI/ML models from population-scale biobanks for early detection and recurrence prediction.</em></p>
+          <p>Detecting cancer progression early is essential to improve patient outcomes. Across many cancer
+             subtypes, stage I 5-year survival rates (i.e >90% for colorectal cancer) are signficantly higher 
+             than stage IV 5-year survival rates (i.e 11-15%), making early detection and recurrence prediction crucial for improving patient outcomes.</p>
+          <p>I am developing and evaluating ML models for (I) multi-cancer early detection, 
+            (II) cancer recurrence risk, and (III) minimal residual disease monitoring using 
+            population-scale biobanks (UK Biobank, All of Us Research Program) and institutional cohorts. 
+            I also trained and benchmarked a state-of-the-art AI genomic variant effect predictor trained on
+            protein abundance, stability, and functional data from multivariant assays of variant effect (MAVEs).</p>
+        </div>
+        <div class="entry-date">Aug 2024 — present</div>
+      </div>
+
+      <!-- AI_PREMie -->
+      <div class="entry">
+        <div class="entry-body">
+          <div class="entry-org">AI_PREMie, UCD Conway Institute of Biomolecular Research</div>
+          <div class="entry-role">ML Research Assistant</div>
+          <p><em>Goal: Develop a best-in-class AI-assisted clinical decision making tool for maternal preeclampsia.</em></p>
+          <p>Preeclampsia (PE) is a maternal hypertensive disorder that claims the lives of 50,000 mothers and 500,000 babies annually. Because its symptoms are very generic, early and accurate detection of PE is a difficult task.</p>
+          <p>I developed a novel AI diagnostic aid and maternal risk stratification tool 
+            for preterm PE diagnosis to assist clinicians tailor patient care strategies (i.e aspirin 
+            prophylaxis). I improved model sensitivity and recall (PPV) by &gt;10% for PE status 
+            prediction and developed and evaluated a low-cost clinical severity score, based on
+            polygenic risk scores, which demonstrated strong correlation with 
+            physician-recorded severity status. Feature analysis validated significant contributions of
+            novel, high-specificity biomarkers (patent pending) for PE diagnosis.</p>
+        </div>
+        <div class="entry-date">Oct 2023 — present</div>
+      </div>
+
+      <!-- Revolution Medicines -->
+      <div class="entry">
+        <div class="entry-body">
+          <div class="entry-org">Revolution Medicines</div>
+          <div class="entry-role">Data Science Research Intern</div>
+          <p><em>Goal: Perform hierarchical clustering on AlphaFold-predicted structures to inform cancer target strategic priorities.</em></p>
+          <p>I scraped 600+ cancer driver proteins from OncoKB with high-confidence AlphaFold 2 
+            structures and hierarchically clustered them with RMSD-based and Dali z-score based 
+            structural similarity, rendering a polar dendrogram where nodes represented 
+            oncoproteins with patient mutation frequency (AACR GENIE) encoded in node radius. 
+            I also developed a tool to swap GENIE data with any other cancer dataset of interest 
+            (cBioPortal, CRISPRko screens, COSMIC).
+            <!-- <a href="https://medium.com/@kevivrox/rethinking-drug-discovery-with-ai-big-data-using-alphafold-predictions-to-structurally-align-8aea617b23f3" target="_blank" rel="noopener noreferrer">Documented here.</a></p> -->
+          <div class="entry-role" style="margin-top: 1.25rem;">Bioinformatics &amp; Cancer Technology Co-op</div>
+          <p><em>Goal: Develop computational tools to increase pharmacogenomics and pharmacokinetics throughput.</em></p>
+          <ul>
+            <li>Trained a graph convolution network using molecular featurization of 
+              RevMed hit library to improve permeability (Caco-2) predictions by 28% compared 
+              to previous molecular weight cutoff.</li>
+            <li>Automated mass spectrometry (MS) cross-linking data analysis pipeline, calculating a 
+              normalized percent cross-linking value given raw relative abundance outputs. This 
+              enabled HTP screening for drug-target binding and reduced analysis time per 
+              384-well MS experiment by dozens of hours, directly leading to discovery of 
+              c-Myc quad-complex drug binding structure.</li>
+            <li>Performed in vitro dose-response assays of KRAS-mutant CRC cell lines and quantified c-Myc mRNA (PAGE, qRT-PCR) and protein (BCA assay, western blotting/ELISA) expression to understand the downstream effect of KRAS inhibition on Myc activity.</li>
+          </ul>
+        </div>
+        <div class="entry-date">Jul 2022 — Jun 2023</div>
+      </div>
+
+      <!-- Apfeld Lab -->
+      <div class="entry">
+        <div class="entry-body">
+          <div class="entry-org">Apfeld Lab, Northeastern University</div>
+          <div class="entry-role">Undergraduate Research Assistant</div>
+          <p><em>Goal: Determine the mechanism of action for the TGF-&#946;/smad peroxide resistance response in <em>C. elegans</em> as a model for neuronal resilience in Alzheimer's Disease.</em></p>
+          <p>I performed lifespan and behavioral assays on type I and type II TGF-&#946; ligand/receptor RNAi nematode knockouts during peroxide exposure, observing a signal integration phenotype that causes half of double ligand knockouts to live longer than wildtype.</p>
+          <p>I then analyzed publicly available bulk RNA-seq data from <em>C. elegans</em> smad knockouts to trace differential gene expression from TGF-&#946; silencing. I discovered that both smad-2 and smad-4 knockouts overexpressed lon-1, which is found abundantly in peroxide-sensing neurons and implicated in negative regulation of the TGF-&#946; pathway.</p>
+        </div>
+        <div class="entry-date">Jan 2022 — Apr 2023</div>
+      </div>
+
+      <!-- Takeda -->
+      <div class="entry">
+        <div class="entry-body">
+          <div class="entry-org">Takeda Pharmaceuticals</div>
+          <div class="entry-role">Bioanalytics &amp; Automation Sciences Co-op</div>
+          <p><em>Goal: Develop bioanalytic software systems to increase throughput for immunotherapeutic discovery in cancer.</em></p>
+          <ul>
+            <li>Designed end-to-end Django web apps for automated data processing of protein quantification assay (HTP Lunatic) and HPLC chromatography (Agilent 1260 Infinity), increasing analysis throughput, data availability, and standardization across a multi-national team.</li>
+            <li>Built an assay fulfillment translator to operationalize the Lynx liquid handler by interpreting a scientist's planned experimental plate layout (96/384-well), increasing assay fulfillment throughput exponentially with picomolar precision.</li>
+          </ul>
+        </div>
+        <div class="entry-date">Jul 2021 — Dec 2021</div>
+      </div>
+
+    </main>
+
+  </body>
+
+</html>
