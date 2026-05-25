@@ -257,6 +257,18 @@ body.inner-page {
 
 .pub-list strong { color: #111111; }
 
+.pub-link {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: #aaaaaa;
+  font-size: 0.85rem;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.pub-link:hover { color: #111111; }
+
 /* =====================================================
    CONTACT
    ===================================================== */
@@ -339,6 +351,35 @@ body.inner-page {
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+body:has(.fun-page) {
+  background: #1c1f23;
+}
+
+/* pagination */
+.fun-pagination {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 100;
+}
+
+.fun-pagination .page-pip {
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  background: #4a5058;
+  cursor: pointer;
+  transition: background 0.2s, width 0.2s;
+}
+
+.fun-pagination .page-pip.active {
+  background: #a0a8b0;
+  width: 44px;
 }
 
 /* === VIDEO EMBED + DJ FADER === */
